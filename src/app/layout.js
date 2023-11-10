@@ -5,7 +5,7 @@ import SideBar from "@/components/sidebar/SideBar";
 
 export const metadata = {
     title: "eltabarak",
-    description: "شراء وحدات تجاريه- بيع وحدات تجاريه - ايجار وحدات تجاريه - مول - شراء مول - ايجار مول- واحدات تجاريه في اكتوبر",
+    description: "شراء وحدات تجاريه- بيع وحدات تجاريه - ايجار وحدات تجاريه - مول - شراء مول - ايجار مول - واحدات تجاريه في اكتوبر",
 };
 
 export default function RootLayout({ children }) {
