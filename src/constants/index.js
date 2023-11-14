@@ -39,5 +39,6 @@ export const sideNavItems = [
     {
         id: "01150164444",
         icon: <BsWhatsapp />,
+        link: "https://wa.me/message/WE6VYTG6JDBXL1"
     },
 ];
