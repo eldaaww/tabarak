@@ -3,6 +3,9 @@ import PH2 from "../../assets/PH_1 - Ext Eye Level.jpg"
 import NH1 from "../../assets/new 3d/3.jpg"
 import NH2 from "../../assets/new 3d/4.jpg"
 
+
+
+
 const propertiesArr = [
     {
         id: 1,
@@ -30,4 +33,4 @@ const propertiesArr = [
     }
 ]
 
-export { propertiesArr }
+export { propertiesArr, propertiesArray }

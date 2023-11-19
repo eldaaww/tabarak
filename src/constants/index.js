@@ -42,3 +42,4 @@ export const sideNavItems = [
         link: "https://wa.me/message/WE6VYTG6JDBXL1"
     },
 ];
+export const pocketbaseURL = 'https://tabarak.pockethost.io'
