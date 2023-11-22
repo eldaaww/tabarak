@@ -3,9 +3,16 @@ import PH2 from "../../assets/PH_1 - Ext Eye Level.jpg"
 import NH1 from "../../assets/new 3d/3.jpg"
 import NH2 from "../../assets/new 3d/4.jpg"
 
+import PocketBase from 'pocketbase';
 
+const pb = new PocketBase('https://tabarak.pockethost.io');
 
+const records = await pb.collection('properties').getFullList({
+  sort: '-created',
+});
+const propertiesArray = records;
 
+console.log(propertiesArray);
 const propertiesArr = [
     {
         id: 1,
