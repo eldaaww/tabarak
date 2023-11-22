@@ -13,12 +13,16 @@ export const navItems = [
         id: "contact",
         name: "Contact",
     },
+    {
+        id: "about",
+        name: "About",
+    }
 ];
 
 export const sideNavItems = [
     {
         id: "Facebook",
-        icon: <FaFacebookF></FaFacebookF>,
+        icon: <FaFacebookF />,
         link: "https://www.facebook.com/profile.php?id=61552211922534&mibextid=ZbWKwL",
     },
     {
@@ -42,4 +46,4 @@ export const sideNavItems = [
         link: "https://wa.me/message/WE6VYTG6JDBXL1"
     },
 ];
-export const pocketbaseURL = 'https://tabarak.pockethost.io'
+export const pocketbaseURL = 'https://altabarak.pockethost.io'

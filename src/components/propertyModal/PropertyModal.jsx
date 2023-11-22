@@ -26,19 +26,20 @@ const PropertyModal = ({ property, onClose }) => {
             className="w-full rounded-t-md mb-4"
           />
           <p className="text-base mb-4">{property.description}</p>
-          {/* Add more details as needed */}
         </div>
 
-        <div className="flex justify-center">
-          <button className="bg-[#D4AF37] text-white py-2 px-4 rounded hover:bg-opacity-80">
-            <a
-                href={getPropertyCatalouge(property, property.pdf)}
-                download={property.pdf}
-            >
-                Download Catalouge
-            </a>
-          </button>
-        </div>
+        {property?.pdf?.length > 0 && (
+            <div className="flex justify-center">
+            <button className="bg-[#D4AF37] text-white py-2 px-4 rounded hover:bg-opacity-80">
+              <a
+                  href={getPropertyCatalouge(property, property.pdf)}
+                  download={property.pdf}
+              >
+                  Download Catalouge
+              </a>
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
