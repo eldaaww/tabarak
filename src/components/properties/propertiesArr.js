@@ -12,7 +12,6 @@ const records = await pb.collection('properties').getFullList({
 });
 const propertiesArray = records;
 
-console.log(propertiesArray);
 const propertiesArr = [
     {
         id: 1,
