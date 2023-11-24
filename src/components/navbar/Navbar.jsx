@@ -60,7 +60,7 @@ const Navbar = () => {
                       index === navItems.length - 1 ? "mr-2" : "mr-8"
                     } hover:border-b-2 hover:border-[#dfe6e9]`}
                   >
-                    <Link href={`#${nav.id}`}>{nav.name}</Link>
+                    <Link href={`${nav.id}`}>{nav.name}</Link>
                   </li>
                 ))}
               </ul>

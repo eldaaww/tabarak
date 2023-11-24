@@ -5,6 +5,7 @@ import { getImageUrl } from '@/utilities/pocketbase.utils';
 import { getPropertyCatalouge } from '@/utilities/pocketbase.utils';
 
 const PropertyModal = ({ property, onClose }) => {
+
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
       <div className="bg-white border border-[#D4AF37] shadow-lg rounded-md max-w-3xl w-full p-6">
@@ -28,18 +29,13 @@ const PropertyModal = ({ property, onClose }) => {
           <p className="text-base mb-4">{property.description}</p>
         </div>
 
-        {property?.pdf?.length > 0 && (
-            <div className="flex justify-center">
-            <button className="bg-[#D4AF37] text-white py-2 px-4 rounded hover:bg-opacity-80">
-              <a
-                  href={getPropertyCatalouge(property, property.pdf)}
-                  download={property.pdf}
-              >
-                  Download Catalouge
-              </a>
-            </button>
-          </div>
-        )}
+        <div className="flex justify-center">
+          <button className="bg-[#D4AF37] text-white py-2 px-4 rounded hover:bg-opacity-80">
+            <a href={getPropertyCatalouge(property, property.pdf)} rel="noreferrer" target='_blank' download="property.pdf">
+              Download Catalouge
+            </a>
+          </button>
+        </div>
       </div>
     </div>
   );
