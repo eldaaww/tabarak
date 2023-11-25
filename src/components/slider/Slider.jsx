@@ -48,16 +48,16 @@ function Slider() {
             <div className=" container h-screen  mx-auto w-full flex flex-col justify-start items-center">
                 <div className="flex justify-center items-center w-full h-full ">
                     <button
-                        className=" mr-5 bg-[#D4AF37] text-white px-4 py-2 rounded-full transition duration-200 ease-in-out hover:bg-[#fde777] active:bg-[#fde777] focus:outline-none"
+                        className="mr-5 bg-[#D4AF37] text-white px-4 py-2 rounded-full transition duration-200 ease-in-out hover:bg-[#fde777] active:bg-[#fde777] focus:outline-none"
                         onClick={() => {
                             prev();
                         }}
                     >
-                        <FaArrowLeftLong></FaArrowLeftLong>
+                        <FaArrowLeftLong />
                     </button>
 
                     <div className=" h-1/2 xl:h-full mt-0 w-2/3 overflow-hidden rounded-xl">
-                        <Image alt={arrOfImg[imgNum].id} src={arrOfImg[imgNum].img} style={{ width: "120%", height: "100%", objectFit: "cover" }}></Image>
+                        <Image alt={arrOfImg[imgNum].id} src={arrOfImg[imgNum].img} style={{ width: "120%", height: "100%", objectFit: "cover" }} />
                     </div>
                     <button
                         className=" ml-5 bg-[#D4AF37] text-white px-4 py-2 rounded-full transition duration-200 ease-in-out hover:bg-[#fde777] active:bg-[#fde777] focus:outline-none"
@@ -65,7 +65,7 @@ function Slider() {
                             next();
                         }}
                     >
-                        <FaArrowRightLong></FaArrowRightLong>
+                        <FaArrowRightLong />
                     </button>
                 </div>
             </div>

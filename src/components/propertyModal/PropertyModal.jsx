@@ -3,6 +3,7 @@ import React from 'react';
 import { IoMdClose } from 'react-icons/io';
 import { getImageUrl } from '@/utilities/pocketbase.utils';
 import { getPropertyCatalouge } from '@/utilities/pocketbase.utils';
+import Image from 'next/image';
 
 const PropertyModal = ({ property, onClose }) => {
 
@@ -21,20 +22,24 @@ const PropertyModal = ({ property, onClose }) => {
             {property.name}
             <div className="w-16 h-1 bg-[#D4AF37] absolute bottom-0 left-1/2 transform -translate-x-1/2" />
           </h1>
-          <img
+          <Image
             alt={getImageUrl(property, property.name)}
             src={getImageUrl(property, property.image)}
             className="w-full rounded-t-md mb-4"
+            width={600}
+            height={400}
           />
           <p className="text-base mb-4">{property.description}</p>
         </div>
 
         <div className="flex justify-center">
-          <button className="bg-[#D4AF37] text-white py-2 px-4 rounded hover:bg-opacity-80">
+          {property.pdf && (
+            <button className="bg-[#D4AF37] text-white py-2 px-4 rounded hover:bg-opacity-80">
             <a href={getPropertyCatalouge(property, property.pdf)} rel="noreferrer" target='_blank' download="property.pdf">
               Download Catalouge
             </a>
           </button>
+          )}
         </div>
       </div>
     </div>

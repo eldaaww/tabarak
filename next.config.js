@@ -1,8 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
     images: {
-        domains: ["drive.google.com"],
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'altabarak.pockethost.io',
+                port: '',
+                pathname: '/api/files/**'
+            }
+        ]
     },
 }
 
-module.exports = nextConfig
