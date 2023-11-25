@@ -28,7 +28,6 @@ const Properties = () => {
             return <PropertyCard key={property.id} property={property} />
           }):
           <div className="flex flex-col items-center justify-center">
-            <img src={logo} alt="logo" className="w-24" />
             <h2 className="text-2xl font-bold">No properties found</h2>
           </div>
         }

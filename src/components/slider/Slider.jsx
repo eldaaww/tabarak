@@ -44,8 +44,8 @@ function Slider() {
     };
 
     return (
-        <div className=" my20 text-white bg-black">
-            <div className=" container h-screen  mx-auto w-full flex flex-col justify-start items-center">
+        <div className=" my-2 text-white bg-black">
+            <div className=" container mx-auto w-full flex flex-col justify-start items-center">
                 <div className="flex justify-center items-center w-full h-full ">
                     <button
                         className="mr-5 bg-[#D4AF37] text-white px-4 py-2 rounded-full transition duration-200 ease-in-out hover:bg-[#fde777] active:bg-[#fde777] focus:outline-none"
@@ -57,7 +57,7 @@ function Slider() {
                     </button>
 
                     <div className=" h-1/2 xl:h-full mt-0 w-2/3 overflow-hidden rounded-xl">
-                        <Image alt={arrOfImg[imgNum].id} src={arrOfImg[imgNum].img} style={{ width: "120%", height: "100%", objectFit: "cover" }} />
+                        <Image alt={arrOfImg[imgNum].id} src={arrOfImg[imgNum].img} className="object-contain w-full h-full" />
                     </div>
                     <button
                         className=" ml-5 bg-[#D4AF37] text-white px-4 py-2 rounded-full transition duration-200 ease-in-out hover:bg-[#fde777] active:bg-[#fde777] focus:outline-none"
